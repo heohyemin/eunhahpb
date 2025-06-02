@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eunha Birthday</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+  <section class="con1">
+    <div class="con_warp">
+      <div class="title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+        <h1>Eunha's</h1>
+        <h2>First</h2>
+        <h3>Birthday</h3>
+      </div>
+      <div class="title_datetime">
+        <span>July 12th</span>
+        <span>PM 12:00</span>
+      </div>
+      <div class="title_image" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
+        <div class="ellipse"></div>
+        <div class="line-curve"></div>
+        <div class="star_deco">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="con2">
+    <div class="txt_tit">인사말</div>
+    <h4 data-aos="fade" data-aos-duration="2000" data-aos-delay="500">은하의 첫 생일에<br />소중한 분들을 초대합니다</h4>
+    <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
+      은하가 세상에 온 지 벌써 1년이 되었습니다.<br /><br />그동안 많은 사랑과 관심을 보내주신<br />여러분께 진심으로 감사드리며,<br />작은 축하 자리를 마련했습니다.<br /><br /><br />
+은하의 첫 생일을 함께 축하하며<br />즐겁고 행복한 시간을 보내고 싶습니다.<br />은하에게 따뜻한 축복과 웃음을 나눠 주세요.<br /><br />함께 해주셔서 이 특별한 날이<br />더욱 빛날 수 있기를 바랍니다.
+    </p>
+  </section>
+
+  <section class="con3">
+    <div class="txt_tit">돌잔치 안내</div>
+    <p>2025년 7월 12일 토요일 오후 12시<br />신라스테이 천안, 3층 PDR Room</p>
+    <div class="map">
+      <!-- 카카오맵 약도 -->
+      <div id="daumRoughmapContainer1748408000948" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%;"></div>
+      <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+      <script charset="UTF-8">
+        new daum.roughmap.Lander({
+          "timestamp": "1748408000948",
+          "key": "2k5ghxac9fj",
+          "mapHeight": "200"
+        }).render();
+      </script>
+    </div>
+
+    <div class="map-btn">
+      <!-- 네이버 길찾기 -->
+      <div class="map-list">
+        <a href="https://naver.me/FPnrX7hy" class="naver-map" target="_blank">네이버 길찾기</a>
+      </div>
+
+      <!-- 카카오 길찾기 -->
+      <div class="map-list">
+        <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.5/kakao.min.js" integrity="e50429bbfd201ad1a8f7135fe3fc70b7" crossorigin="anonymous"></script>
+        <script>
+          Kakao.init('e50429bbfd201ad1a8f7135fe3fc70b7'); // 앱의 JavaScript 키로 대체
+          function startNavigation() {
+            Kakao.Navi.start({
+              name: '신라스테이 천안',
+              x: 36.8198,
+              y: 127.1370,
+              coordType: 'wgs84',
+            });
+          }
+        </script>
+        <a href="javascript:startNavigation()" class="kakao-map">카카오 길찾기</a>
+      </div>
+
+      <!-- 티맵 길찾기 (미리보기 제거) -->
+      <div class="map-list">
+        <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=6K9vnZ96Al9dxfJFSItW96ZwwwKD8GEy1rjEeff0"></script>
+        <script>
+          function startTmapNavigation() {
+            const destinationName = encodeURIComponent("신라스테이 천안");
+            const lon = 127.1370;
+            const lat = 36.8198;
+            const tmapUrl = `tmap://route?goalx=${lon}&goaly=${lat}&goalname=${destinationName}`;
+            window.location.href = tmapUrl;
+          }
+        </script>
+        <a href="javascript:startTmapNavigation()" class="route-link">티맵 길찾기</a>
+      </div>
+    </div>
+    <div class="call-list">
+      <a href="tel:010-7249-1248">👨 아빠에게 전화</a><a href="tel:010-6278-7245">👩‍🦰 엄마에게 전화</a>
+    </div>
+  </section>
+
+  <section class="con4">
+    <div class="txt_tit">갤러리</div>
+  </section>
+
+  <footer>
+    <div class="copyright">
+      <p>아빠 서형민 | 엄마 허혜민 | 주인공 서은하</p>
+    </div>
+  </footer>
+
+
+  <!-- AOS 및 뷰포트 처리 -->
+  <script>
+    AOS.init();
+    function setViewportHeight() {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    window.addEventListener('resize', setViewportHeight);
+    window.addEventListener('load', setViewportHeight);
+  </script>
+
+  <!-- 배경 음악 자동재생 (자동차단 우회 불가 대비 클릭용 토글 제공) -->
+  <div class="mp3">
+    <audio id="myAudio" src="Curious little boy.mp3" autoplay loop></audio>
+    <button id="playPauseBtn" class="play-pause-btn" aria-label="재생 토글"></button>
+  </div>
+
+  <script>
+    const audio = document.getElementById('myAudio');
+    const btn = document.getElementById('playPauseBtn');
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      try {
+        await audio.play();
+        btn.classList.remove('paused');
+      } catch (e) {
+        console.warn('자동 재생 실패:', e);
+        btn.classList.add('paused');
+      }
+    });
+
+    btn.addEventListener('click', async () => {
+      if (audio.paused) {
+        try {
+          await audio.play();
+          btn.classList.remove('paused');
+        } catch (e) {
+          console.warn('재생 실패:', e);
+        }
+      } else {
+        audio.pause();
+        btn.classList.add('paused');
+      }
+    });
+  </script>
+</body>
+</html>
