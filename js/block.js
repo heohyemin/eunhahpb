@@ -23,7 +23,7 @@
     // 오른쪽 클릭(컨텍스트 메뉴) 차단 (소스 보기 등)
     document.addEventListener('contextmenu', function(e) {
         e.preventDefault(); // 기본 컨텍스트 메뉴 방지
-        alert('오른쪽 클릭은 허용되지 않습니다.');
+        alert('복사는 허용되지 않습니다.');
     });
 
     // 개발자 도구 창 크기 감지 (지속적인 감시)
