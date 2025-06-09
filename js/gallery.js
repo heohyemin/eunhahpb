@@ -13,42 +13,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Dummy image data - replace with your actual image paths
     const images = [
-         '/images/gallery/0-1.jpg',
-        '/images/gallery/0-2.jpg',
-        '/images/gallery/50-1.jpg',
-        '/images/gallery/50-2.jpg',
-        '/images/gallery/50-3.jpg',
-        '/images/gallery/50-4.jpg',
-        '/images/gallery/100-1.jpg',
-        '/images/gallery/100-2.jpg',
-        '/images/gallery/100-3.jpg',
-        '/images/gallery/100-4.jpg',
-        '/images/gallery/100-5.jpg',
-        '/images/gallery/200-1.jpg',
-        '/images/gallery/200-2.jpg',
-        '/images/gallery/200-3.jpg',
-        '/images/gallery/200-4.jpg',
-        '/images/gallery/300-1.jpg',
-        '/images/gallery/300-2.jpg',
-        '/images/gallery/300-3.jpg',
-        '/images/gallery/300-4.jpg',
-        '/images/gallery/300-5.jpg',
-        '/images/gallery/300-6.jpg',
-        '/images/gallery/1.jpg',
-        '/images/gallery/2.jpg',
-        '/images/gallery/3.jpg',
-        '/images/gallery/4.jpg',
-        '/images/gallery/5.jpg',
-        '/images/gallery/6.jpg',
-        '/images/gallery/7.jpg',
-        '/images/gallery/8.jpg',
-        '/images/gallery/9.jpg',
-        '/images/gallery/10.jpg',
-        '/images/gallery/11.jpg',
-        '/images/gallery/12.jpg',
-        '/images/gallery/13.jpg',
-        '/images/gallery/14.jpg',
-        '/images/gallery/15.jpg',
+        '../images/gallery/0-1.jpg',
+        '../images/gallery/0-2.jpg',
+        '../images/gallery/50-1.jpg',
+        '../images/gallery/50-2.jpg',
+        '../images/gallery/50-3.jpg',
+        '../images/gallery/50-4.jpg',
+        '../images/gallery/100-1.jpg',
+        '../images/gallery/100-2.jpg',
+        '../images/gallery/100-3.jpg',
+        '../images/gallery/100-4.jpg',
+        '../images/gallery/100-5.jpg',
+        '../images/gallery/200-1.jpg',
+        '../images/gallery/200-2.jpg',
+        '../images/gallery/200-3.jpg',
+        '../images/gallery/200-4.jpg',
+        '../images/gallery/300-1.jpg',
+        '../images/gallery/300-2.jpg',
+        '../images/gallery/300-3.jpg',
+        '../images/gallery/300-4.jpg',
+        '../images/gallery/300-5.jpg',
+        '../images/gallery/300-6.jpg',
+        '../images/gallery/1.jpg',
+        '../images/gallery/2.jpg',
+        '../images/gallery/3.jpg',
+        '../images/gallery/4.jpg',
+        '../images/gallery/5.jpg',
+        '../images/gallery/6.jpg',
+        '../images/gallery/7.jpg',
+        '../images/gallery/8.jpg',
+        '../images/gallery/9.jpg',
+        '../images/gallery/10.jpg',
+        '../images/gallery/11.jpg',
+        '../images/gallery/12.jpg',
+        '../images/gallery/13.jpg',
+        '../images/gallery/14.jpg',
+        '../images/gallery/15.jpg',
     ];
 
     const initialDisplayCount = 9;
@@ -84,11 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (thumbnailGrid.children.length === initialDisplayCount) {
             renderThumbnails(images.length); // Show all images
             toggleButtonText.textContent = '접기';
-            toggleButtonIcon.src = '/images/up-arrow.svg';
+            toggleButtonIcon.src = '../images/up-arrow.svg';
         } else {
             renderThumbnails(initialDisplayCount); // Show initial 9 images
             toggleButtonText.textContent = '더보기';
-            toggleButtonIcon.src = '/images/down-arrow.svg';
+            toggleButtonIcon.src = '../images/down-arrow.svg';
             // Scroll to top of gallery if folded
             window.scrollTo({
                 top: document.querySelector('.gallery-container').offsetTop,
