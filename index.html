@@ -105,6 +105,30 @@
 
   <section class="con4">
     <div class="txt_tit">갤러리</div>
+
+     <div class="gallery-container">
+        <div class="thumbnail-grid" id="thumbnailGrid">
+            </div>
+        <button id="toggleButton" class="toggle-button">
+            <span id="toggleButtonText">더보기</span>
+            <img id="toggleButtonIcon" src="/images/down-arrow.svg" alt="More/Fold icon" class="toggle-button-icon">
+        </button>
+    </div>
+
+    <div class="image-slider-overlay" id="imageSliderOverlay">
+        <button class="close-button" id="closeSlider"><img src="/images/close.svg" alt="Close"></button>
+        
+        <button class="navigation-button left-arrow" id="prevImage"><img src="/images/left-arrow.svg" alt="Previous"></button>
+        <button class="navigation-button right-arrow" id="nextImage"><img src="/images/right-arrow.svg" alt="Next"></button>
+        
+        <div class="slider-content">
+            <img src="" alt="Full size image" id="fullSizeImage">
+        </div>
+        <div class="image-numbering" id="imageNumbering"></div>
+    </div>
+
+
+    <script src="/js/gallery.js"></script>
   </section>
 
   <footer>
@@ -125,11 +149,11 @@
     window.addEventListener('load', setViewportHeight);
   </script>
 
-  <!-- 배경 음악 자동재생 (자동차단 우회 불가 대비 클릭용 토글 제공) -->
+  <!-- 배경 음악 자동재생 (자동차단 우회 불가 대비 클릭용 토글 제공)
   <div class="mp3">
     <audio id="myAudio" src="mp3/Curious little boy.mp3" autoplay loop></audio>
     <button id="playPauseBtn" class="play-pause-btn" aria-label="재생 토글"></button>
-  </div>
+  </div> -->
 
   <script>
     const audio = document.getElementById('myAudio');
