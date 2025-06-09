@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         './images/gallery/300-3.jpg',
         './images/gallery/300-4.jpg',
         './images/gallery/300-5.jpg',
-        './images/gallery/300-6.jpg',
+        //'./images/gallery/300-6.jpg',
         './images/gallery/1.jpg',
         './images/gallery/2.jpg',
         './images/gallery/3.jpg',
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         './images/gallery/12.jpg',
         './images/gallery/13.jpg',
         './images/gallery/14.jpg',
-        //'./images/gallery/15.jpg',
+        './images/gallery/15.jpg',
     ];
 
     const initialDisplayCount = 9;
